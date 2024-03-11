@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='uk'>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="keywords" content="аптеки львова, аптеки, ліки, медикаменти, таблетки, online, пошук ліків, наявність ліків" />
+    <title>PHARMA - пошук та запит ліків, інструкції із застосування</title>
+    <link rel="stylesheet" href="./style.css" />
+
+
+
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                console.log("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function showPosition(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+
+            fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${latitude}&lon=${longitude}`)
+                .then(response => response.json())
+                .then(data => {
+                    var cityName = data.address.city || data.address.town || data.address.village || data.address.municipality || data.address.county || data.address.state || data.address.country;
+                    var locationElement = document.getElementById("location");
+                    locationElement.innerHTML = `<img src="geo-icon.png" class="geoimage" alt="Маркер" style="vertical-align: middle;"> ${cityName}`;
+                })
+                .catch(error => {
+                    console.log("Error fetching city name:", error);
+                });
+        }
+
+        window.onload = getLocation;
+    </script>
+</head>
+
+<body>
+    <h1 class="hp"><b>PHARMA</b></h1>
+    <div class="location" id="location"> 
+        <img src="geo-icon.png" class="geoimage" alt="Маркер" style="vertical-align: middle;"> Locating...
+    </div>
+    <form action="/search" method="GET">
+        <input type="text" name="query" placeholder="Пошук ліків..." />
+        <button type="submit">Пошук</button>
+    </form>
+    <hr/>
+    <div class="image-gallery">
+        <a href="profile.html"><img src="1891388.png" class="img1" alt="Профіль"></a>
+        <a href="demand.html"><img src="blue_webpict35_1484337167-1.png" class="img2" alt="Вподобання"></a>
+        <a href="box.html"><img src="box.png" class="img3" alt="Корзина"></a>
+    </div>
+
+    <div class="categories-container">
+        <nav>
+            <h5 class="cat1">Категорії</h5>
+            <select class="categories" onchange="location = this.value;">
+                <option value="#" selected disabled>Виберіть категорію</option>
+                <option value="products.html">Ліки та профілактичні засоби</option>
+                <option value="products.html">Вітаміни</option>
+                <option value="products.html">Товари для дітей та мам</option>
+                <option value="products.html">Краса та догляд</option>
+                <option value="products.html">Зоотовари</option>
+            </select>
+        </nav>
+    </div>
+
+    <nav>
+        <h3><a href="home.html">Головна</a></h3>
+        <h3><a href="top.html">Топ продажів</a></h3>
+        <h3><a href="about.html">Про нас</a></h3>
+        <h3><a href="contact.html">Контакти</a></h3>
+    </nav>
+
+    
+    <div class="offered-goods">
+        <h2 class="h2off">Пропоновані товари</h2>
+        <div class="category-images">
+            <div>
+                <h3>Ліки та профілактичні засоби</h3>
+                <img src="analgin.jpg" alt="Ліки 1">
+                <img src="nosh.jpg" alt="Ліки 2">
+                <img src="nim.jpg" alt="Ліки 3">
+            </div>
+            <div>
+                <h3>Вітаміни</h3>
+                <img src="c500.png" alt="Вітаміни 1">
+                <img src="d3.png" alt="Вітаміни 2">
+                <img src="omega.png" alt="Вітаміни 3">
+            </div>
+            <div>
+                <h3>Зоотовари</h3>
+                <img src="dog.jpg" alt="Зоотовари 1">
+                <img src="dog2.jpg" alt="Зоотовари 2">
+                <img src="pets3.jpg" alt="Зоотовари 3">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="warning">Самолікування може бути шкідливим для вашого здоров'я</p>
+        <p>Copyright © 2024 PHARMA. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
