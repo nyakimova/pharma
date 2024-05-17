@@ -1,0 +1,78 @@
+/* Products Styles */
+.products {
+    background-color: #fff; /* White Background */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow Effect */
+  }
+  
+  .products h1 {
+    color: #007bff; /* Primary Blue */
+    margin-bottom: 20px;
+  }
+  
+  .products input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    border: 1px solid #ccc; /* Light Gray Border */
+    border-radius: 5px;
+  }
+  
+  .products button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Primary Blue */
+    color: #fff; /* White Text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .products button:hover {
+    background-color: #0056b3; /* Darker Blue on Hover */
+  }
+  
+  .products .image-gallery {
+    margin-top: 20px;
+  }
+  
+  .products .image-gallery img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .products nav {
+    margin-top: 20px;
+  }
+  
+  .products nav h3 {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  
+  .products nav h3 a {
+    text-decoration: none;
+    color: #007bff; /* Primary Blue */
+  }
+  
+  .products .hp {
+    margin-top: 30px;
+  }
+  
+  .products footer {
+    margin-top: 30px;
+    background-color: #007bff; /* Primary Blue */
+    color: #fff; /* White Text */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .products .warning {
+    color: #ffffff; /* Red */
+  }
+  

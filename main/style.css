@@ -1,0 +1,77 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    width: auto;
+    padding: 10px;
+    z-index: 1000;
+    display: flex; /* Додаємо flexbox */
+    align-items: center; /* Вирівнюємо елементи по вертикалі */
+  }
+  .hp, .image-gallery a {
+    margin: 0;
+    font-size: 24px;
+    color: #1e90ff; /* Колір тексту */
+    text-decoration: none; /* Відключаємо підкреслення */
+  }
+  
+  .location {
+    margin-left: 35px; /* Додаємо відступ між заголовком і локацією */
+    margin-top: 7px; /* Зсуваємо геолокацію вгору */
+  }
+  
+  .image-gallery {
+    position: absolute;
+    top: 0; /* Зсуваємо вгору */
+    right: 40px; /* Зсуваємо вправо */
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(59, 125, 239);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px; /* Відступи між квадратами */
+  }
+  
+  .box h3 {
+    margin: 0;
+  }
+  
+  .box a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-links a {
+    color: white; /* Зробити текст білим */
+    text-decoration: none;
+    margin: 0 10px; /* Додати відступи між посиланнями */
+  }
+
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Протягнути до лівого краю */
+    width: 100%;
+    background-color: #3f7eec; /* Додайте бажаний колір фону футера */
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Додайте відступи від тексту до країв футера */
+  }
+  

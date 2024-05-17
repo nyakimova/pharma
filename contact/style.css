@@ -27,12 +27,13 @@
   right: 40px;
 }
 
+
 .nav {
   display: flex;
   justify-content: space-around;
   padding: 10px 0;
   background-color: #208ae1;
-  margin-top: 40px; /* Підняв бар ще вище */
+  margin-top: 20px; /* Підняв бар ще вище */
 }
 
 .nav a {
@@ -40,9 +41,7 @@
   color: #ffffff;
   font-weight: bold;
 }
-/* Ваш файл style.css */
 
-.image {
-  width: 120px; /* Змініть розмір на необхідний */
-   /* Автоматично збереже пропорції зображення */
+.nav a:not(:last-child) {
+  margin-right: 20px; /* Додайте відступ між категоріями у барі */
 }
