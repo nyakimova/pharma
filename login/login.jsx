@@ -37,7 +37,7 @@ const Login = () => {
       if (response.status === 200) {
         console.log('Login successful:', response.data);
         localStorage.setItem('authToken', response.data.token); // Save the token to localStorage
-        navigate('/home'); // Redirect to the booking page on successful login
+        navigate('/box'); // Redirect to the booking page on successful login
       } else {
         console.log('Login failed with status:', response.status);
         setError(response.data.message || 'Unknown Error');

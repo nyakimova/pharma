@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 10px;
+  width: auto;
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.hp, .image-gallery a {
+  margin: 0;
+  font-size: 24px;
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.location {
+  margin-left: 35px;
+  margin-top: 6px;
+}
+
+.image-gallery {
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: #208ae1;
+  margin-top: 40px; /* Підняв бар ще вище */
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+/* Ваш файл style.css */
+
+.image {
+  width: 120px; /* Змініть розмір на необхідний */
+   /* Автоматично збереже пропорції зображення */
+}

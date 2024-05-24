@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import './top.css';
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -32,27 +33,20 @@ const Top = () => {
 
     return (
         <>
-            <h1 className="hp"><b>PHARMA</b></h1>
-            <div className="location" id="location">
-                <img src="geo-icon.png" className="geoimage" style={{ verticalAlign: 'middle' }} /> Locating...
+            <div className="header">
+                <h1><b>PHARMA</b></h1>
+                <nav className="nav">
+                    <h3><Link to="/home">Головна</Link></h3>
+                </nav>
             </div>
         
             <hr />
             <div className="image-gallery">
-                <Link to="/profile">Профіль </Link>
                 <Link to="/box"> Корзина</Link>
             </div>
 
-            <nav>
-                <h3><Link to="/home">Головна</Link></h3>
-                <h3><Link to="/products"> Товари</Link></h3>
-                <h3><Link to="/about">Про нас</Link></h3>
-                <h3><Link to="/contact">Контакти</Link></h3>
-                <h3><Link to="/demand">Зробити запит на пошук ліків</Link></h3>
-            </nav>
-
             <h1 className="hp">Топ продажів</h1>
-            <img src="analgin.jpg" className="topimg" />
+            <img src="анальгін.jpg" />
             <br />
 
             <footer>

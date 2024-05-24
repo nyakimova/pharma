@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import './style.css'; 
+import './contact.css'; 
 
 const Contact = () => {
   const [cityName, setCityName] = useState("");
@@ -43,7 +43,7 @@ const Contact = () => {
     <hr />
     <div className="image-gallery">
       <Link to="/box"> Корзина |</Link>
-      <Link to="/profile"> Профіль </Link>
+  
     </div>
 
     <nav className="nav">

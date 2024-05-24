@@ -1,0 +1,78 @@
+nav {
+  position: fixed;
+  top: 90px; /* залежно від висоти вашого заголовка, зазначте відповідну відстань */
+  left: 90px;
+  width: auto;
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  border-bottom-color: transparent; /* Робимо лінію невидимою */
+}
+
+
+.hp h1 {
+  font-size: 24px;
+  margin-top: 60px; /* Значення може бути змінене в залежності від вашого дизайну */
+  padding: 5px;
+  line-height: 1.2;
+}
+
+
+.hp ul {
+  font-size: 8px; /* Розмір тексту */
+}
+
+.hp ul li p {
+  margin: 5px 0; /* Відступи між параграфами у списку */
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(59, 125, 239);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 50px; /* Відступи між квадратами */
+}
+
+.box h3 {
+  margin: 0;
+}
+
+.box a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: white; /* Зробити текст білим */
+  text-decoration: none;
+  margin: 0 10px; /* Додати відступи між посиланнями */
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Протягнути до лівого краю */
+  width: 100%;
+  background-color: #3f7eec; /* Додайте бажаний колір фону футера */
+  color: white;
+  text-align: center;
+  padding: 20px 0; /* Додайте відступи від тексту до країв футера */
+}

@@ -1,0 +1,22 @@
+/* Стиль для посилання на головну сторінку */
+.header {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    width: auto;
+    padding: 10px;
+    z-index: 1000;
+    display: flex; /* Додаємо flexbox */
+    align-items: center; /* Вирівнюємо елементи по вертикалі */
+    color: #4379ed;
+  }
+
+.nav h3 a {
+    color: #ffffff; /* Задаємо колір для посилання */
+    text-decoration: none; /* Видаляємо підкреслення */
+    padding: 10px; /* Додаємо відступи */
+}
+
+.nav h3 a:hover {
+    text-decoration: underline; /* Підкреслюємо посилання при наведенні */
+}

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import './style.css'; 
+import './product.css'; 
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -39,7 +39,6 @@ const Products = () => {
             </div>
             <hr />
             <div className="image-gallery">
-                <Link to="/profile">Профіль </Link>
                 <Link to="/box"> Корзина</Link>
             </div>
 

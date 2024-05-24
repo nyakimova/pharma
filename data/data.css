@@ -1,0 +1,67 @@
+/* Styling for top bar navigation */
+.top-bar {
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  padding: 20px 0;
+  position: relative;
+  left: 0%; /* Adjust this value to shift the top bar to the right */
+  width: 100%; /* Adjust the width as needed to fit the container */
+  margin-bottom: 10%; /* Remove bottom margin */
+  border-bottom: 5px solid #007bff; /* Add border to unify with data container */
+}
+
+.top-bar ul {
+  list-style-type: none;
+  margin: 0; /* Ensure there is no extra margin */
+  padding: 0;
+  text-align: center;
+}
+
+.top-bar li {
+  display: inline-block;
+  margin: 0 20px; /* Adjusted margin */
+}
+
+.top-bar li a {
+  color: #fff; /* White text color */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.top-bar li a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for data container */
+.data-container {
+  width: 93%; /* Set the width to 90% of the viewport */
+  margin: 0 auto; /* Center the container and remove top margin */
+  padding: 20px;
+  background-color: #f5f5f5; /* Light grey background */
+  border-top: 5px solid #007bff; /* Add border to unify with top bar */
+}
+
+.data-container h1 {
+  color: #007bff; /* Blue color for heading */
+}
+
+.data-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.data-container li {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff; /* White background for list items */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a slight elevation effect */
+}
+
+.data-container p {
+  margin: 5px 0;
+}
+
+.data-container p strong {
+  color: #007bff; /* Blue color for strong text */
+}

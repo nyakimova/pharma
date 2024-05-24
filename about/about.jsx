@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import './index.css';
+import { Link } from 'react-router-dom'; // Імпорт Link з react-router-dom
+import './style.css';
 
-const Home = () => {
+function About() {
   const [cityName, setCityName] = useState('Locating...');
 
   useEffect(() => {
@@ -35,40 +35,35 @@ const Home = () => {
   return (
     <div>
       <header className="header">
-        <h1 className="hp"><b>PHARMA | головна</b></h1>
+        <h1 className="hp"><b>PHARMA</b></h1>
         <div className="location" id="location">
           {cityName}
         </div>
       </header>
       <hr />
       <div className="image-gallery">
-         <Link to="/box">       Корзина |</Link>
-
+        <Link to="/box"> Корзина |</Link>
       </div>
 
-
-      <div className="container">
-        <div className="box">
-          <h3><Link to="/top">Топ продажів</Link></h3>
-        </div>
-        <div className="box">
-          <h3><Link to="/products">Товари</Link></h3>
-        </div>
-        <div className="box">
-          <h3><Link to="/demand">Зробити запит на пошук ліків</Link></h3>
-        </div>
+      <nav className="nav">
+        <Link to="/home">Головна</Link>
+        <Link to="/top">Топ продажів</Link>
+        <Link to="/contact">Контакти</Link>
+        <Link to="/products">Товари</Link>
+        <Link to="/demand">Зробити запит на пошук ліків</Link>
+      </nav>
+      <div className="hp">
+        <h2>Про нас</h2>
+        <p>PHARMA - надійний помічник у пошуках ліків у кожному куточку України!</p>
+        <p>Потрібно дізнатись коротку інформацію про ліки? Ми допоможемо з цим!</p>
+        <img src="src/pages/about/liky.jpg" className="image" />
       </div>
-
       <footer>
-        <div className="footer-links">
-          <Link to="/about">Про нас</Link>
-          <Link to="/contact">Контакти</Link>
-        </div>
         <p className="warning">Самолікування може бути шкідливим для вашого здоров'я</p>
         <p>Copyright © 2024 PHARMA. All rights reserved.</p>
       </footer>
     </div>
   );
-};
+}
 
-export default Home;
+export default About;
